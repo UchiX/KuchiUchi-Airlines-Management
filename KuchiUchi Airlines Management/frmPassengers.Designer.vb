@@ -23,51 +23,52 @@ Partial Class frmPassengers
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtSurname = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblBirthday = New System.Windows.Forms.Label()
         Me.lblSurname = New System.Windows.Forms.Label()
         Me.lblID = New System.Windows.Forms.Label()
         Me.lblNme = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnSignin = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(210, 383)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(269, 474)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(248, 20)
         Me.DateTimePicker1.TabIndex = 27
         '
-        'TextBox3
+        'txtID
         '
-        Me.TextBox3.Location = New System.Drawing.Point(210, 329)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox3.TabIndex = 26
+        Me.txtID.Location = New System.Drawing.Point(269, 420)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(248, 20)
+        Me.txtID.TabIndex = 26
         '
-        'TextBox2
+        'txtSurname
         '
-        Me.TextBox2.Location = New System.Drawing.Point(210, 256)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox2.TabIndex = 25
+        Me.txtSurname.Location = New System.Drawing.Point(269, 347)
+        Me.txtSurname.Name = "txtSurname"
+        Me.txtSurname.Size = New System.Drawing.Size(248, 20)
+        Me.txtSurname.TabIndex = 25
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(210, 186)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox1.TabIndex = 24
+        Me.txtName.Location = New System.Drawing.Point(269, 277)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(248, 20)
+        Me.txtName.TabIndex = 24
         '
         'lblBirthday
         '
         Me.lblBirthday.AutoSize = True
         Me.lblBirthday.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBirthday.Location = New System.Drawing.Point(77, 380)
+        Me.lblBirthday.Location = New System.Drawing.Point(136, 471)
         Me.lblBirthday.Name = "lblBirthday"
         Me.lblBirthday.Size = New System.Drawing.Size(79, 23)
         Me.lblBirthday.TabIndex = 23
@@ -77,7 +78,7 @@ Partial Class frmPassengers
         '
         Me.lblSurname.AutoSize = True
         Me.lblSurname.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSurname.Location = New System.Drawing.Point(73, 253)
+        Me.lblSurname.Location = New System.Drawing.Point(132, 344)
         Me.lblSurname.Name = "lblSurname"
         Me.lblSurname.Size = New System.Drawing.Size(83, 23)
         Me.lblSurname.TabIndex = 22
@@ -87,7 +88,7 @@ Partial Class frmPassengers
         '
         Me.lblID.AutoSize = True
         Me.lblID.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblID.Location = New System.Drawing.Point(118, 324)
+        Me.lblID.Location = New System.Drawing.Point(177, 415)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(38, 23)
         Me.lblID.TabIndex = 21
@@ -97,7 +98,7 @@ Partial Class frmPassengers
         '
         Me.lblNme.AutoSize = True
         Me.lblNme.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNme.Location = New System.Drawing.Point(98, 181)
+        Me.lblNme.Location = New System.Drawing.Point(157, 272)
         Me.lblNme.Name = "lblNme"
         Me.lblNme.Size = New System.Drawing.Size(58, 23)
         Me.lblNme.TabIndex = 20
@@ -126,29 +127,41 @@ Partial Class frmPassengers
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "KuchiUchi Air Travel"
         '
-        'btnSignin
+        'btnCancel
         '
-        Me.btnSignin.Font = New System.Drawing.Font("Lucida Sans", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSignin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnSignin.Location = New System.Drawing.Point(210, 434)
-        Me.btnSignin.Name = "btnSignin"
-        Me.btnSignin.Size = New System.Drawing.Size(95, 36)
-        Me.btnSignin.TabIndex = 34
-        Me.btnSignin.Text = "Back"
-        Me.btnSignin.UseVisualStyleBackColor = True
+        Me.btnCancel.Font = New System.Drawing.Font("Lucida Sans", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnCancel.Location = New System.Drawing.Point(382, 562)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(95, 36)
+        Me.btnCancel.TabIndex = 34
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
+        'btnSave
+        '
+        Me.btnSave.Font = New System.Drawing.Font("Lucida Sans", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnSave.Location = New System.Drawing.Point(234, 562)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(95, 36)
+        Me.btnSave.TabIndex = 35
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
         '
         'frmPassengers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.ClientSize = New System.Drawing.Size(615, 529)
-        Me.Controls.Add(Me.btnSignin)
+        Me.ClientSize = New System.Drawing.Size(717, 648)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtID)
+        Me.Controls.Add(Me.txtSurname)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lblBirthday)
         Me.Controls.Add(Me.lblSurname)
         Me.Controls.Add(Me.lblID)
@@ -161,14 +174,15 @@ Partial Class frmPassengers
 
     End Sub
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtID As System.Windows.Forms.TextBox
+    Friend WithEvents txtSurname As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
     Friend WithEvents lblBirthday As System.Windows.Forms.Label
     Friend WithEvents lblSurname As System.Windows.Forms.Label
     Friend WithEvents lblID As System.Windows.Forms.Label
     Friend WithEvents lblNme As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents btnSignin As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents btnSave As System.Windows.Forms.Button
 End Class

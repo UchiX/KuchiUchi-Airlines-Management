@@ -30,7 +30,6 @@ Partial Class frmLogin
         Me.lblNme = New System.Windows.Forms.Label()
         Me.lblID = New System.Windows.Forms.Label()
         Me.lblPassword = New System.Windows.Forms.Label()
-        Me.lblError = New System.Windows.Forms.Label()
         Me.btnSignin = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -115,17 +114,6 @@ Partial Class frmLogin
         Me.lblPassword.TabIndex = 31
         Me.lblPassword.Text = "Password:"
         '
-        'lblError
-        '
-        Me.lblError.AutoSize = True
-        Me.lblError.Font = New System.Drawing.Font("Arial Narrow", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblError.ForeColor = System.Drawing.Color.DarkRed
-        Me.lblError.Location = New System.Drawing.Point(241, 252)
-        Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(196, 23)
-        Me.lblError.TabIndex = 32
-        Me.lblError.Text = "Incorrect ID or password"
-        '
         'btnSignin
         '
         Me.btnSignin.Font = New System.Drawing.Font("Lucida Sans", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -156,7 +144,6 @@ Partial Class frmLogin
         Me.ClientSize = New System.Drawing.Size(576, 377)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSignin)
-        Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.lblID)
         Me.Controls.Add(Me.txtPassword)
@@ -180,7 +167,6 @@ Partial Class frmLogin
     Friend WithEvents lblNme As System.Windows.Forms.Label
     Friend WithEvents lblID As System.Windows.Forms.Label
     Friend WithEvents lblPassword As System.Windows.Forms.Label
-    Friend WithEvents lblError As System.Windows.Forms.Label
     Friend WithEvents btnSignin As System.Windows.Forms.Button
     Friend WithEvents btnCancel As System.Windows.Forms.Button
 

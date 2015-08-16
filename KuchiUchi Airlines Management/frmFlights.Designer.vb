@@ -23,17 +23,19 @@ Partial Class frmFlights
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtArriveAirport = New System.Windows.Forms.TextBox()
         Me.lblArrive = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtFlightName = New System.Windows.Forms.TextBox()
         Me.lblFlightname = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtNoOfSeats = New System.Windows.Forms.TextBox()
         Me.lblSeats = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtDepartAirport = New System.Windows.Forms.TextBox()
         Me.lblDepart = New System.Windows.Forms.Label()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'DateTimePicker1
@@ -43,12 +45,12 @@ Partial Class frmFlights
         Me.DateTimePicker1.Size = New System.Drawing.Size(206, 20)
         Me.DateTimePicker1.TabIndex = 37
         '
-        'TextBox5
+        'txtArriveAirport
         '
-        Me.TextBox5.Location = New System.Drawing.Point(606, 284)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(195, 20)
-        Me.TextBox5.TabIndex = 36
+        Me.txtArriveAirport.Location = New System.Drawing.Point(606, 284)
+        Me.txtArriveAirport.Name = "txtArriveAirport"
+        Me.txtArriveAirport.Size = New System.Drawing.Size(195, 20)
+        Me.txtArriveAirport.TabIndex = 36
         '
         'lblArrive
         '
@@ -60,12 +62,12 @@ Partial Class frmFlights
         Me.lblArrive.TabIndex = 35
         Me.lblArrive.Text = "Arrive Airport"
         '
-        'TextBox4
+        'txtFlightName
         '
-        Me.TextBox4.Location = New System.Drawing.Point(249, 210)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(206, 20)
-        Me.TextBox4.TabIndex = 34
+        Me.txtFlightName.Location = New System.Drawing.Point(249, 210)
+        Me.txtFlightName.Name = "txtFlightName"
+        Me.txtFlightName.Size = New System.Drawing.Size(206, 20)
+        Me.txtFlightName.TabIndex = 34
         '
         'lblFlightname
         '
@@ -77,12 +79,12 @@ Partial Class frmFlights
         Me.lblFlightname.TabIndex = 33
         Me.lblFlightname.Text = "Flight Name"
         '
-        'TextBox3
+        'txtNoOfSeats
         '
-        Me.TextBox3.Location = New System.Drawing.Point(606, 210)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(195, 20)
-        Me.TextBox3.TabIndex = 32
+        Me.txtNoOfSeats.Location = New System.Drawing.Point(606, 210)
+        Me.txtNoOfSeats.Name = "txtNoOfSeats"
+        Me.txtNoOfSeats.Size = New System.Drawing.Size(195, 20)
+        Me.txtNoOfSeats.TabIndex = 32
         '
         'lblSeats
         '
@@ -94,12 +96,12 @@ Partial Class frmFlights
         Me.lblSeats.TabIndex = 31
         Me.lblSeats.Text = "No. of Seats"
         '
-        'TextBox2
+        'txtDepartAirport
         '
-        Me.TextBox2.Location = New System.Drawing.Point(249, 279)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(206, 20)
-        Me.TextBox2.TabIndex = 30
+        Me.txtDepartAirport.Location = New System.Drawing.Point(249, 279)
+        Me.txtDepartAirport.Name = "txtDepartAirport"
+        Me.txtDepartAirport.Size = New System.Drawing.Size(206, 20)
+        Me.txtDepartAirport.TabIndex = 30
         '
         'lblDepart
         '
@@ -144,21 +146,53 @@ Partial Class frmFlights
         Me.Label3.TabIndex = 38
         Me.Label3.Text = "KuchiUchi Air Travel"
         '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSave.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnSave.Location = New System.Drawing.Point(249, 457)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(134, 49)
+        Me.btnSave.TabIndex = 41
+        Me.btnSave.Text = "save"
+        Me.btnSave.UseVisualStyleBackColor = False
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCancel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnCancel.Location = New System.Drawing.Point(442, 457)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(148, 49)
+        Me.btnCancel.TabIndex = 42
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
         'frmFlights
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.ClientSize = New System.Drawing.Size(842, 445)
+        Me.ClientSize = New System.Drawing.Size(842, 576)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtArriveAirport)
         Me.Controls.Add(Me.lblArrive)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtFlightName)
         Me.Controls.Add(Me.lblFlightname)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtNoOfSeats)
         Me.Controls.Add(Me.lblSeats)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtDepartAirport)
         Me.Controls.Add(Me.lblDepart)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.Label2)
@@ -169,15 +203,17 @@ Partial Class frmFlights
 
     End Sub
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtArriveAirport As System.Windows.Forms.TextBox
     Friend WithEvents lblArrive As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtFlightName As System.Windows.Forms.TextBox
     Friend WithEvents lblFlightname As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtNoOfSeats As System.Windows.Forms.TextBox
     Friend WithEvents lblSeats As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDepartAirport As System.Windows.Forms.TextBox
     Friend WithEvents lblDepart As System.Windows.Forms.Label
     Friend WithEvents lblDate As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
 End Class
